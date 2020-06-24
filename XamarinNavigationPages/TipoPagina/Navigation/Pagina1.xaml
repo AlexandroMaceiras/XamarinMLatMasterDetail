@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinNavigationPages.TipoPagina.Navigation.Pagina1"
+             Title="Título da Página 1">
+    <ContentPage.Title>
+        Sobrescreve Qquer coisa
+    </ContentPage.Title>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Pesquisa" IconImageSource="carrinho.png" Clicked="Menu"/>
+        <ToolbarItem Text="Detalhes" IconImageSource="featured.png" Clicked="Menu"/>
+        <ToolbarItem Text="Ordenar" Clicked="Menu"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Página 1"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="- Note que o 'ContentPage.Title', do .xaml sobrescreve até o botão 1 e o seu título na Aba pelo Aba1, mas pelo Aba2 não."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="- O Nome dos botões vem do título da página. No botão 2 o Título foi modificado na criação das Abas pelo Aba1, mas pelo Aba2 é diferente. "
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="- Pelo Aba2, os Títulos não vem das páginas no que foi declarado no XAML, então se vc não declarar ele fica vazio, neste caso só mostrando o ícone, os outros mostra o Título dá página porque foi feito de forma direta a chamada. "
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="- Pelo Aba2, o item 3 é criado na programação e não no XAML."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Label Text="- Essas páginas podem ser clicadas ou arrastadas!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Ir para pagina 2 (Carousel)" Clicked="MudarPagina2"/>
+            <Button Text="*** [Chamar Modal] ***" Clicked="ChamarModal" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

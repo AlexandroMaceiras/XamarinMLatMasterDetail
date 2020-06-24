@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinNavigationPages.Inicio.PaginaInicial"
+             BackgroundColor="LightSkyBlue">
+    <ContentPage.Content>
+        <StackLayout  VerticalOptions="CenterAndExpand" WidthRequest="10" >
+            <Label Text="Click abaixo pro Carousel" TextColor="Blue" HorizontalOptions="CenterAndExpand" />
+            <Button ImageSource="positivo.png" Clicked="MudarPagina" />
+            <Label Text="Click abaixo pro Abas1" TextColor="Blue" HorizontalOptions="CenterAndExpand" />
+            <Button ImageSource="positivo.png" Clicked="MudarTabbed" />
+            <Label Text="Click abaixo pro Abas2" TextColor="Blue" HorizontalOptions="CenterAndExpand" />
+            <Button ImageSource="positivo.png" Clicked="MudarTabbed2" />
+            <Label Text="Click abaixo pro Abas1 com Navigate" TextColor="Blue" HorizontalOptions="CenterAndExpand" />
+            <Button ImageSource="positivo.png" Clicked="MudarTabbed3" />
+            <Label Text="Click abaixo pro Abas2 com Navigate" TextColor="Blue" HorizontalOptions="CenterAndExpand" />
+            <Button ImageSource="positivo.png" Clicked="MudarTabbed4" />
+            <Label Text="Click abaixo pro MASTER" TextColor="Blue" HorizontalOptions="CenterAndExpand" />
+            <Button ImageSource="positivo.png" Clicked="Master" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

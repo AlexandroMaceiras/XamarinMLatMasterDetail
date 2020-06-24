@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinNavigationPages.TipoPagina.Navigation.Pagina2"
+             Title="Título da Página 2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Pagina 2"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="- Pelo Aba1o Carousel dá PAU porque as ABAS são TabbedPage e não CountentPage. Mas pelo Aba2 só dá PAU quando o item tem a chamada de forma direta e não tem mais a barra de Carrosel pra ter referência de como voltar. "
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="- Pelo Abas1 com Navigate e pelo Abas1 com Navigate funciona tudo, juntando todas as barras superiores, e os títulos dos botôes que correspondem a títulos de páginas mostram se vieram por carocel ou pelo PopToRootAsync."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="- A chamada para a Modal foi colocada só na primeira página, mas poderia ter sido colocada em qualquer uma ou TODAS se necessário. A Modal é um desvio independente."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />            
+            <Button Text="Ir para pagina 3 (Carousel)" Clicked="MudarPagina3"/>
+            <Label Text="Voltar TUDO (Carousel)" />
+            <Button Text="Voltar TUDO" Clicked="VoltarTudo" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
